@@ -15,7 +15,7 @@ import streamlit as st
 import torch
 from transformers import AutoModel, AutoTokenizer
 
-MODEL_PATH = os.environ.get('MODEL_PATH', 'THUDM/chatglm3-6b')
+MODEL_PATH = os.environ.get('MODEL_PATH', '/home/dell/wk/03_MedGPT/Langchain-Chatchat/bge-large-zh')
 TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 
 st.set_page_config(
