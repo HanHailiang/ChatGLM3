@@ -10,7 +10,7 @@ TOKENIZER_PATH = os.environ.get("TOKENIZER_PATH", MODEL_PATH)
 tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
 model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
 
-
+# Testing my code here2
 os_name = platform.system()
 clear_command = "cls" if os_name == "Windows" else "clear"
 stop_stream = False
